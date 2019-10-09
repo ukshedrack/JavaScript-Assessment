@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   	<meta name="viewport" content="width=device-width">
+	<title>Assessment Question 29</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function Calculator(){
+			this.read = () => {
+				this.a = Number(prompt("Enter a value"));
+				this.b = Number(prompt("Enter another value"));
+			}
+			this.sum = () => {return (this.a + this.b);}
+			this.mul = () => {return (this.a * this.b);}
+		}
+
+		let calculator = new Calculator();
+		calculator.read();
+		alert( "Sum = " + calculator.sum() );
+		alert( "Mul = " + calculator.mul() );
+
+	</script>
+</body>
+</html>

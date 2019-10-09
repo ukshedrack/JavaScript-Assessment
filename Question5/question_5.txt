@@ -1,0 +1,7 @@
+Question 5
+
+1. output = hello 1
+
+2. output = hello name
+
+3. output = hello Ilya

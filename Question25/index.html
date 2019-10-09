@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   	<meta name="viewport" content="width=device-width">
+	<title>Assessment Question 25</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var isEmpty = (obj) =>{
+			var keys = Object.keys(obj);
+			if (keys.length == 0){return true;}
+			return false;
+		}
+
+		let schedule = {};
+ 
+		alert(isEmpty(schedule) ); // true
+		 
+		schedule["8:30"] = "get up";
+		 
+		alert( isEmpty(schedule) ); // false
+
+		
+	</script>
+</body>
+</html>

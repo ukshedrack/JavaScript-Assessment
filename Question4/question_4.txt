@@ -1,0 +1,6 @@
+Question 1. Name of planet = Earth;
+
+var planetName = "Earth";
+
+Question 2. 
+var currentVisitor = "Shedrack";

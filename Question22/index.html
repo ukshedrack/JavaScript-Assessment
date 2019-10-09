@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   	<meta name="viewport" content="width=device-width">
+	<title>Assessment Question 22</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var x = Math.round(prompt("Enter base"));
+		var n = Math.round(prompt("Enter exponent"));
+		pow = (x, n) => {
+			let result = 1;
+			for (let i = 0; i < n; i++) {
+				result *= x;
+			}
+			return result;
+		};
+
+		alert(pow(x, n));
+		
+	</script>
+</body>
+</html>
