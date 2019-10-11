@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   	<meta name="viewport" content="width=device-width">
+	<title>Assessment Question 32</title>
+</head>
+<body>
+	<h1>Question 32</h1>
+	<script type="text/javascript">
+		let hamster = {
+		  stomach: [],
+		 
+		  eat(food) {
+		    this.stomach.push(food);
+		  }
+		};
+		 
+		let speedy = {
+		  __proto__: hamster
+		};
+		 
+		// let lazy = {
+		//   __proto__: hamster
+		// };
+
+		speedy.eat("apple");
+		alert( speedy.stomach ); // apple
+		
+		// lazy.eat("pawpaw")
+		// alert(lazy.stomach ); // apple
+		// This one also has it, why? fix please.
+
+		// Because they are both inheriting from the same parent.
+		// So any changes made to the parent will be affected by 
+		// both hamsters.
+
+		// Fix
+		let lazy = {
+		  stomach: [],
+		 
+		  eat(food) {
+		    this.stomach.push(food);
+		  }
+		};
+		lazy.eat("pawpaw")
+		alert(lazy.stomach ); // pawpaw
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   	<meta name="viewport" content="width=device-width">
+	<title>Assessment Question 41</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let array = [];
+		function sumInput(){
+			while(true){
+				var number = prompt("Please enter a number");
+				if (!number) break;
+				else if (isNaN(Number(number)) == true) break;
+				array.push(Number(number));	
+			}
+			return array.reduce((a, b) => a + b, 0);
+		}
+		console.log(array);
+		console.log(sumInput());
+	</script>
+</body>
+</html>
